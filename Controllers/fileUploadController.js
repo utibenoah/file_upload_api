@@ -1,5 +1,6 @@
+const asyncErrorHandlerUltil = require("../Utils/asyncErrorHandlerUltil");
 
 
-exports.file= (req,res)=>{
-   console.log(req.file)
-}
+exports.file= asyncErrorHandlerUltil(async(req,res)=>{
+   console.log('hello file')
+})

@@ -1,9 +1,10 @@
 const express=require('express')
 const bodyParser =require('body-parser')
 const morgan= require('morgan')
-const customError=require('./Utils/customError')
+const customError=require('./Utils/customErrorUltil')
 const fileUploadRoute =require('./Routes/fileUploadRoutes')
 const globalErrorMiddleware = require('./Middlewares/globalErrorMiddleware')
+
 
 
 
@@ -34,6 +35,6 @@ app.all("*catchall",(req,res,next)=>{
 }),
 
 
-app.use(globalErrorMiddleware.globalError)
+app.use(globalErrorMiddleware)
 
 module.exports=app
