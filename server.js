@@ -22,7 +22,7 @@ cloudinary.api.ping()
     })
     .catch((error)=>{
         console.log("Cloudinary connection fail")
-        console.log(error.error.message)
+        console.log(error)
     })
  
     
