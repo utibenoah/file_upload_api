@@ -6,7 +6,7 @@ const fileUploadController=require('../Controllers/fileUploadController')
 
 
 router.route('/uploadfile')
-    .post(fileUploadController.file)
+    .post(fileUploadController.uploadFile)
 
 
 
